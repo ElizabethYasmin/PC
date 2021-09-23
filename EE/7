@@ -1,0 +1,13 @@
+Si A & B == 0, significa que la forma binaria de A y B no son 1 en la misma posición.
+Primero veamos qué significa n-1.
+   Sean = 1101011000 (los sistemas binario y decimal son iguales), entonces
+
+    n-1 = 1101010111.
+
+n & (n-1) = 1101010000
+
+Se puede concluir que la posición baja de n y n-1 no son iguales hasta que hay un punto de inflexión, que es el punto de tomar prestado. La posición alta desde este punto, n y n-1 son iguales, si el la posición alta es la misma, esto causará un El problema es que n y n-1 pueden tener el mismo 1 en el mismo bit, de modo que ((n & (n-1))! = 0), si lo desea
+
+((n & (n-1)) == 0), entonces los bits altos deben ser todos 0, por lo que no habrá idénticos.
+
+Entonces n es una potencia de 2 o 0

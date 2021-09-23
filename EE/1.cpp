@@ -1,4 +1,6 @@
-#include <bits/stdc++.h>
+//#include <bits/stdc++.h>
+#include<string>
+#include<iostream>
 using namespace std;
 
 int Anagrama(string c1,string c2){
