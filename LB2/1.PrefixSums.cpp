@@ -15,6 +15,8 @@ void fillPrefixSum(int arr[], int n, int prefixSum[])
 
 int main()
 {
+    //Entrada: 10,4,16,20
+    //Salida : 10,14,30,50
     int arr[] = { 10, 4, 16, 20 };
     const int n = sizeof(arr) / sizeof(arr[0]);
     int prefixSum[n];
