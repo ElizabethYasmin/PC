@@ -34,5 +34,7 @@ int main()
     	cout<<*iter<<endl;
     system("pause");
     return 0;
-    
+    //entrada -> {5,6,7,8,9,10}
+    //entrada -> 15
+    //salida -> 2  3  
 }
