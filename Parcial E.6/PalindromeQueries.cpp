@@ -42,8 +42,6 @@ signed main(){
     freopen("output.txt", "w", stdout);
     #endif
 
-    mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
-    B = uniform_int_distribution<int>(73, 7337)(rng);
     
     int n, t; cin>>n>>t;
     string s; cin>>s;
