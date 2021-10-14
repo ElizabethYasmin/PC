@@ -1,10 +1,9 @@
-## ☕ PROGRAMACION COMPETITIVA ☕
+## ☕ PROGRAMACION COMPETITIVA ☕ <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" /> 
 
 Ejercicios del curso de Programación Competitiva de la Universidad Nacaional de San Agustin
 
 [![PERFIL](https://img.shields.io/badge/perfil%20-%23323330.svg?&style=for-the-badge&logo=perfil&logoColor=black&color=FF0080)](https://github.com/ElizabethYasmin)
 [![REPOSITÓRIO](https://img.shields.io/badge/repositório%20-%23323330.svg?&style=for-the-badge&logo=repositório&logoColor=black&color=8000FF)](https://github.com/ElizabethYasmin/EDA)
-<img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" /> 
 
 ## Menu
 - [Huanca Parqui, Elizabeth Yasmin](#Huanca)
