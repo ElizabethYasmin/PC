@@ -35,6 +35,21 @@ struct {
     }
 } pre, suf;
 
+
+//Input:
+//7 5
+//aybabtu
+//2 3 5
+//1 3 x
+//2 3 5
+//1 5 x
+//2 3 5
+
+//Output:
+//YES
+//NO
+//YES
+
 signed main(){
     ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
     #ifdef LOCAL

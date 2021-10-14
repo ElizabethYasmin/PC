@@ -33,7 +33,20 @@ void megatronRage(int *arr, int M, int P){
     cout << max_sum << " " << max_len << endl;
 }
 
-int main(int argc, char const *argv[]){
+//Entrada:
+//3
+//5 0
+//1 2 3 5 6
+//4 6
+//1 10 2 9
+//10 1
+//1 7 8 9 19 11 21 8 11 0 
+//Salida:
+//2
+//9
+//13
+
+int main(){
 
     ios_base::sync_with_stdio(false);
     cin.tie(NULL); 
