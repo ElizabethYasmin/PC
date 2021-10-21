@@ -17,7 +17,7 @@
     <b>Escuela profesional de Ciencias de la Computación</b>
   </p>
  <p align="center">
-    <b>Profesor: </b> Flores Farfan, Ales Josue
+    <b>Profesor: </b> Flores Farfan, Alex Josue
 </p>
 
 
