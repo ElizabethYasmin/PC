@@ -7,6 +7,14 @@
 [![Y](https://img.shields.io/badge/badges%20-%23323330.svg?&style=for-the-badge&logo=badges&logoColor=black&color=0000FF)](https://github.com/iuricode/README-template/blob/main/badges/badges.md)
 
 
+
+## Menu
+- [Datos de Institución](#Institucion)
+- [Profesor](#Profesor)
+- [Huanca Parqui, Elizabeth Yasmin](#Huanca)
+
+
+##Institucion
 <p align="center">
     <b>UNIVERSIDAD NACIONAL DE SAN AGUSTÍN DE AREQUIPA</b>
  </p>
@@ -16,13 +24,11 @@
  <p align="center"> 
     <b>Escuela profesional de Ciencias de la Computación</b>
   </p>
- <p align="center">
-    <b>Profesor: </b> Flores Farfan, Alex Josue
-</p>
+ 
+##Profesor
+------------ | -------------
+<img src="https://img.shields.io/badge/profesor%20-%23323330.svg?&style=for-the-badge&logo=cards%20estrelas&logoColor=black&color=FFFF00" /> | `Flores Farfan, Alex Josue`
 
-
-## Menu
-- [Huanca Parqui, Elizabeth Yasmin](#Huanca)
 
 ## Huanca
 
