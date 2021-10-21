@@ -1,5 +1,5 @@
 
- # <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />  ☕ PROGRAMACION COMPETITIVA - GRUPO A ☕ 
+ # <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />  ☕ PROGRAMACIÓN COMPETITIVA - GRUPO A ☕ <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
 
 [![PERFIL](https://img.shields.io/badge/perfil%20-%23323330.svg?&style=for-the-badge&logo=perfil&logoColor=black&color=FF0080)](https://github.com/ElizabethYasmin)
 [![REPOSITÓRIO](https://img.shields.io/badge/repositório%20-%23323330.svg?&style=for-the-badge&logo=repositório&logoColor=black&color=8000FF)](https://github.com/ElizabethYasmin/PC)
@@ -9,11 +9,15 @@
 
 <p align="center">
     <b>UNIVERSIDAD NACIONAL DE SAN AGUSTÍN DE AREQUIPA</b>
- 
+ </p>
+ <p align="center">
     <b>FACULTAD DE INGENIERIA DE PRODUCCIÓN Y DE SERVICIOS</b>
- 
+ </p>
+ <p align="center"> 
     <b>Escuela profesional de Ciencias de la Computación</b>
-    <b>Profesor: </b> ALEX JOSUE FLORES FARFAN
+  </p>
+ <p align="center">
+    <b>Profesor: </b> Flores Farfan, Ales Josue
 </p>
 
 
