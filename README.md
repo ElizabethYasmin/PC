@@ -4,8 +4,6 @@
 [![PERFIL](https://img.shields.io/badge/perfil%20-%23323330.svg?&style=for-the-badge&logo=perfil&logoColor=black&color=FF0080)](https://github.com/ElizabethYasmin)
 [![REPOSITÓRIO](https://img.shields.io/badge/repositório%20-%23323330.svg?&style=for-the-badge&logo=repositório&logoColor=black&color=8000FF)](https://github.com/ElizabethYasmin/EDA)
 
-# Datos
-
 <p align="center">
     <b>UNIVERSIDAD NACIONAL DE SAN AGUSTÍN DE AREQUIPA</b>
 <p align="center">
@@ -13,11 +11,10 @@
 <p align="center">
     <b>Escuela profesional de Ciencias de la Computación</b>
 <p align="center">
-    <b>Alumno</b>: [Huanca Parqui, Elizabeth Yasmin](#Huanca)
-<p align="center">
     <b>Profesor</b>: ALEX JOSUE FLORES FARFAN
 </p>
- 
+
+<p align="center">
 ## Menu
 - [Huanca Parqui, Elizabeth Yasmin](#Huanca)
 
@@ -28,7 +25,7 @@ Red | URL
 <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /> | `ehuancap@unsa.edu.pe`
 <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /> | `https://github.com/ElizabethYasmin`
 Discord | Yasmin#8737
-
+</p>
 <table>
   <tr>
     <td align="center">
