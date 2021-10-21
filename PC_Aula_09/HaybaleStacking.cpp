@@ -2,7 +2,14 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
-
+//Entrada:
+//7 4
+//5 5
+//2 4
+//4 6
+//3 5
+//Salida:
+//1
 int main(){
     int n, k, x, y;
     ios_base::sync_with_stdio(false);
