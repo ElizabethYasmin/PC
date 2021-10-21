@@ -14,7 +14,7 @@
 - [Huanca Parqui, Elizabeth Yasmin](#Huanca)
 
 
-##Institucion
+## Institucion
 <p align="center">
     <b>UNIVERSIDAD NACIONAL DE SAN AGUSTÍN DE AREQUIPA</b>
  </p>
@@ -25,7 +25,9 @@
     <b>Escuela profesional de Ciencias de la Computación</b>
   </p>
  
-##Profesor
+## Profesor
+
+Cargo | Nombre
 ------------ | -------------
 <img src="https://img.shields.io/badge/profesor%20-%23323330.svg?&style=for-the-badge&logo=cards%20estrelas&logoColor=black&color=FFFF00" /> | `Flores Farfan, Alex Josue`
 
