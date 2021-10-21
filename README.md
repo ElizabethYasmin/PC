@@ -1,11 +1,23 @@
 
  # <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />  ☕ PROGRAMACION COMPETITIVA - GRUPO A ☕ 
 
-Ejercicios del curso de Programación Competitiva de la Universidad Nacaional de San Agustin
-
 [![PERFIL](https://img.shields.io/badge/perfil%20-%23323330.svg?&style=for-the-badge&logo=perfil&logoColor=black&color=FF0080)](https://github.com/ElizabethYasmin)
 [![REPOSITÓRIO](https://img.shields.io/badge/repositório%20-%23323330.svg?&style=for-the-badge&logo=repositório&logoColor=black&color=8000FF)](https://github.com/ElizabethYasmin/EDA)
 
+# Datos
+
+<p align="center">
+    <b>UNIVERSIDAD NACIONAL DE SAN AGUSTÍN DE AREQUIPA</b>
+<p align="center">
+    <b>FACULTAD DE INGENIERIA DE PRODUCCIÓN Y DE SERVICIOS</b>
+<p align="center">
+    <b>Escuela profesional de Ciencias de la Computación</b>
+<p align="center">
+    <b>Alumno</b>: [Huanca Parqui, Elizabeth Yasmin](#Huanca)
+<p align="center">
+    <b>Profesor</b>: ALEX JOSUE FLORES FARFAN
+</p>
+ 
 ## Menu
 - [Huanca Parqui, Elizabeth Yasmin](#Huanca)
 
