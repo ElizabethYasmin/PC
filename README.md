@@ -6,15 +6,12 @@
 
 <p align="center">
     <b>UNIVERSIDAD NACIONAL DE SAN AGUSTÍN DE AREQUIPA</b>
-<p align="center">
     <b>FACULTAD DE INGENIERIA DE PRODUCCIÓN Y DE SERVICIOS</b>
-<p align="center">
     <b>Escuela profesional de Ciencias de la Computación</b>
-<p align="center">
-    <b>Profesor</b>: ALEX JOSUE FLORES FARFAN
+    <b>Profesor: </b> ALEX JOSUE FLORES FARFAN
 </p>
 
-<p align="center">
+
 ## Menu
 - [Huanca Parqui, Elizabeth Yasmin](#Huanca)
 
@@ -25,7 +22,7 @@ Red | URL
 <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /> | `ehuancap@unsa.edu.pe`
 <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /> | `https://github.com/ElizabethYasmin`
 Discord | Yasmin#8737
-</p>
+
 <table>
   <tr>
     <td align="center">
