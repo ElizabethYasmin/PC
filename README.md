@@ -7,7 +7,7 @@
 
 ## Menu
 - [Datos de Institución](#Institucion)
-- [Profesor](#Profesor)
+- [Magister](#Magister)
 - [Huanca Parqui, Elizabeth Yasmin](#Huanca)
 
 
@@ -20,11 +20,11 @@ Cargo | Nombre
 <img src="https://img.shields.io/badge/facultad%20-%23323330.svg?&style=for-the-badge&logo=cards%20estrelas&logoColor=black&color=7289DA" /> | `FACULTAD DE INGENIERIA DE PRODUCCIÓN Y DE SERVICIOS`
 <img src="https://img.shields.io/badge/escuela%20-%23323330.svg?&style=for-the-badge&logo=cards%20estrelas&logoColor=black&color=00FFFF" /> | `CIENCIAS DE LA COMPUTACIÓN`
 
-## Profesor
+## Magister
 
 Cargo | Nombre
 ------------ | -------------
-<img src="https://img.shields.io/badge/profesor%20-%23323330.svg?&style=for-the-badge&logo=cards%20estrelas&logoColor=black&color=FFFF00" /> | `Flores Farfan, Alex Josue`
+<img src="https://img.shields.io/badge/Magister%20-%23323330.svg?&style=for-the-badge&logo=cards%20estrelas&logoColor=black&color=FFFF00" /> | `Flores Farfan, Alex Josue`
 
 
 ## Huanca
