@@ -14,7 +14,7 @@
 ## Institucion
 
 
-- | -
+Tipo | Dato
 ------------ | -------------
 <img src="https://img.shields.io/badge/universidad%20-%23323330.svg?&style=for-the-badge&logo=badges&logoColor=black&color=0000FF" /> | `UNIVERSIDAD NACIONAL DE SAN AGUSTÍN DE AREQUIPA`
 <img src="https://img.shields.io/badge/facultad%20-%23323330.svg?&style=for-the-badge&logo=cards%20estrelas&logoColor=black&color=7289DA" /> | `FACULTAD DE INGENIERIA DE PRODUCCIÓN Y DE SERVICIOS`
