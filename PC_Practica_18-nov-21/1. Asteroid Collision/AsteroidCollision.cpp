@@ -51,6 +51,6 @@ vector<int> asteroidCollision(vector<int>& asteroids) {
 
         for (size_t i = 0; i < asteroidCollision(v).size(); ++i) {
         cout << asteroidCollision(v).at(i) << "; ";
-    }
+        }
 
     }
