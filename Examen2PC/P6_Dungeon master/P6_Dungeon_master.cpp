@@ -1,110 +1,100 @@
+//https://open.kattis.com/problems/dungeon
 
-#include <stdio.h>
-#include <assert.h>
+#include <iostream>
+#include <queue>
+#include <vector>
+#include <queue>
+#include <climits>
+using namespace std;
 
-#define WHITE 0
-#define GRAY 1
-#define BLACK 2
-#define oo 1000000000
+int xX, yY, zZ;
 
-typedef struct { int lev,row,col; } cell;
-
-FILE *input;
-
-int rows,cols,levels;
-char dungeon[40][40][40];
-int d[40][40][40],color[40][40][40];
-cell queue[30000];
-int head,tail;
-
-void skip_line() { while (fgetc(input)!='\n'); }
-
-void enqueue (int l, int i, int j)
-{
-  queue[tail].lev = l;
-  queue[tail].row = i;
-  queue[tail].col = j;
-  tail++;
-  color[l][i][j] = GRAY;
+bool validation(int nX, int nY, int nZ){
+    return nX >= 0 && nX < xX && nY >= 0 && nY < yY && nZ >= 0 && nZ < zZ;
 }
 
-void dequeue (int *l, int *i, int *j)
-{
-  *l = queue[head].lev;
-  *i = queue[head].row;
-  *j = queue[head].col;
-  head++;
-  color[*l][*i][*j] = BLACK;
-}
+struct Position{
+    Position(int x, int y, int z)
+        :x(x), y(y), z(z)
+        {}
+        
+    int x, y, z;
+};
 
-void visit (int level, int row, int col, int distance)
-{
-  if (level<0 || level>=levels || row<0 || row>=rows || col<0 || col>=cols || 
-      dungeon[level][row][col]=='#' || color[level][row][col]!=WHITE) return;
-  d[level][row][col] = distance;
-  enqueue(level,row,col);
-}
+int timegood[35][35][35];
+const int NumChanges = 6;
+int Changex[] = {0, 0, -1, 1, 0, 0};
+int Changey[] = {-1, 1, 0, 0, 0, 0};
+int Changez[] = {0, 0, 0, 0, -1, 1};
 
-int read_case()
-{
-  int l,i;
-
-  fscanf(input,"%d %d %d",&levels,&rows,&cols);
-  if (levels==0 && rows==0 && cols==0) return 0;
-  skip_line();
-  for (l=0; l<levels; l++)
-    for (i=0; i<=rows; i++)
-      fgets(dungeon[l][i],40,input);
-  return 1;
-}
-
-void solve_case()
-{
-  cell start;
-  int l,i,j,newd;
-  
-  /* 1. Initialization */
-
-  for (l=0; l<levels; l++)
-    for (i=0; i<rows; i++)
-      for (j=0; j<cols; j++)
-	{
-	  color[l][i][j] = WHITE;
-	  d[l][i][j] = oo;
-	  if (dungeon[l][i][j]=='S')
-	    { start.lev = l; start.row = i; start.col = j; }
-	}
-
-  /* 2. Breadth-First Search */
-
-  head = tail = 0;
-  visit(start.lev,start.row,start.col,0);
-  while (head!=tail)
+int PushAlong(int xStart, int yStart, int zStart, int exitX, int exitY, int exitZ){  
+    queue<Position> limit;
+    limit.push(Position(xStart, yStart, zStart));
+    
+    while (!limit.empty())
     {
-      dequeue(&l,&i,&j);
-      if (dungeon[l][i][j]=='E') break;
-      newd = d[l][i][j]+1;
-      visit(l  , i-1, j  , newd);  /* North */
-      visit(l  , i+1, j  , newd);  /* South */
-      visit(l  , i  , j+1, newd);  /* East  */
-      visit(l  , i  , j-1, newd);  /* West  */
-      visit(l+1, i  , j  , newd);  /* Up    */
-      visit(l-1, i  , j  , newd);  /* Down  */
+        Position current = limit.front();
+        limit.pop();
+        
+        int nextTime = timegood[current.z][current.y][current.x] + 1;
+        for (int c = 0; c < NumChanges; ++c)
+        {
+            int nX = current.x + Changex[c];
+            int nY = current.y + Changey[c];
+            int nZ = current.z + Changez[c];
+            
+            if (validation(nX, nY, nZ) && nextTime < timegood[nZ][nY][nX])
+            {
+                if (nX == exitX && nY == exitY && nZ == exitZ)
+                    return nextTime;
+                
+                timegood[nZ][nY][nX] = nextTime;
+                limit.push(Position(nX, nY, nZ));
+            }
+        }
     }
-
-  /* 3. Output */
-
-  if (dungeon[l][i][j]=='E')
-    printf("Escaped in %d minute(s).\n",d[l][i][j]);
-  else
-    printf("Trapped!\n");
+    return -1;
 }
 
-int main()
-{
-  input = fopen("dungeon.in","r");
-  assert(input!=NULL);
-  while (read_case()) solve_case();
-  fclose(input);
-  return 0;
+int main(){
+    while (cin >> zZ >> yY >> xX, zZ) {
+        const int size = zZ * yY * xX + 10;
+        int startX, startY, startZ;
+        int exitX=-1, exitY, exitZ;
+        for (int z = 0; z < zZ; ++z)
+        {
+            for (int y = 0; y < yY; ++y)
+            {
+                string line;
+                cin >> line;
+                for (int x = 0; x < xX; ++x)
+                {
+                    if (line[x] == 'S')
+                    {
+                        startX = x;
+                        startY = y;
+                        startZ = z;
+                        timegood[z][y][x] = 0;
+                    }
+                    else if (line[x] == 'E')
+                    {
+                        exitX = x;
+                        exitY = y;
+                        exitZ = z;
+                        timegood[z][y][x] = size;
+                    }
+                    else if (line[x] == '.')
+                        timegood[z][y][x] = size;
+                    else
+                        timegood[z][y][x] = 0;
+                }
+            }
+        }
+        
+        int cost = PushAlong(startX, startY, startZ, exitX, exitY, exitZ);
+        if (cost == -1)
+            cout << "Trapped!\n";
+        else
+            cout << "Escaped in " << cost << " minute(s)." << '\n';
+    }
 }
