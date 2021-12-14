@@ -1,4 +1,4 @@
-#include <stdio.h>
+/* #include <stdio.h>
 
 
 int edgeCount(int, int, char*);
@@ -72,7 +72,55 @@ int leftToRightCount(int n, int m, char* coast){
         if(i == p){                     // p = m - 1 (last char in first row)
             p+=m;                       // p+=m (last char in next column, and so on)
             continue;                   // we move to next iteration
+        }#include <iostream>
+#include <vector>
+#include <queue>
+#include <list>
+#include <algorithm>
+#include <string>
+using namespace std;
+
+void coastLength(vector<vector<int>> &mmap, int n, int m){
+    static vector<vector<int>> offsets = {{-1,0}, {1,0}, {0,-1}, {0,1}};
+    vector<pair<int, int>> unvisited;
+    unvisited.push_back(make_pair(0, 0));
+    int sccount = 0;
+    while(!unvisited.empty()){
+        int posY = unvisited.back().first;
+        int posX = unvisited.back().second;
+        unvisited.pop_back();
+        mmap[posY][posX] = 2;
+        for(auto &offset : offsets){
+            pair<int,int> tloc = make_pair(posY + offset[0], posX + offset[1]);
+            if(tloc.first < 0 || tloc.first >= n || tloc.second < 0 || tloc.second >= m) continue;
+            else{
+                if (mmap[tloc.first][tloc.second] == 0 && (find(unvisited.begin(), unvisited.end(), tloc) == unvisited.end())){
+                    unvisited.push_back(tloc);
+                }else if(mmap[tloc.first][tloc.second] == 1){
+                    sccount++;
+                }
+            }
+            
         }
+    }
+
+    cout << sccount << endl;
+}
+
+int main(){
+    int n, m;
+    string strLine;
+    cin >> n >> m;
+    vector<vector<int>> mmap(n+2, vector<int>(m+2, 0));
+    for(int i=1; i<=n; i++){
+        cin >> strLine;
+        int j=1;
+        for(auto car : strLine)
+            mmap[i][j++] = (car == '0') ? 0 : 1;
+    }
+    coastLength(mmap, n + 2, m + 2);
+    return 0;
+}
 
         if(i == m*n - 1)                //if we are at last char in matrix, we break out from loop
             break;
@@ -92,4 +140,4 @@ int removingInsides(int n, int m, char* coast){ // Lakes and islands in lakes ar
     }
 
     return innerCoasts * 4; // *4 because we added 4 coasts before for each island.
-}
+} */
