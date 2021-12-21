@@ -1,4 +1,7 @@
-#include <bits/stdc++.h>
+#include<iostream>
+#include<algorithm>
+#include <stdio.h>
+#include <string.h>
 using namespace std;
 typedef long long ll;
 const int N = 100000 + 10;
@@ -153,7 +156,7 @@ void lct_init() {
 }
 int b[N << 1], x[N << 1];
 int ver[N << 1], id[N << 1];
-void init() {
+/* void init() {
     scanf("%d%d", &n, &q);
     scanf("%s", s + 1);
     lct_init();
@@ -177,8 +180,8 @@ void init() {
         ask[i] = {l + 1, r + 1, i};
     }
     sort(ask + 1, ask + q + 1);
-}
-void solve() {
+} */
+/* void solve() {
     int p = 1;
     for (int i = 1; i <= n; i++) {
         upd(1, n, 1, i, 1);
@@ -197,9 +200,48 @@ void solve() {
         }
     }
     for (int i = 1; i <= q; i++) printf("%lld\n", ans[i]);
-}
+} */
 int main() {
-    init();
-    solve();
+    scanf("%d%d", &n, &q);
+    scanf("%s", s + 1);
+    lct_init();
+    build(1, n);
+    cnt = 0, lst = ++cnt;
+    for (int i = 1; i <= n; i++) extend(Tr(s[i]));
+    for (int i = 1; i <= cnt; i++) b[l[i]]++;
+    for (int i = 1; i <= n; i++) b[i] += b[i - 1];
+    for (int i = 1; i <= cnt; i++) x[b[l[i]]--] = i;
+    for (int i = 1; i <= cnt; ++i) {
+        id[x[i]] = i;
+        if (mrk[x[i]]) ver[l[x[i]]] = i;
+    }
+    for (int i = 1; i <= cnt; i++) {
+        len[i] = l[x[i]];
+        if (f[x[i]]) fa[i] = id[f[x[i]]];
+    }
+    int l, r;
+    for (int i = 1; i <= q; i++) {
+        scanf("%d%d", &l, &r);
+        ask[i] = {l + 1, r + 1, i};
+    }
+    sort(ask + 1, ask + q + 1);
+    int p = 1;
+    for (int i = 1; i <= n; i++) {
+        upd(1, n, 1, i, 1);
+        access(ver[i], i);
+        int pre = 0;
+        for (int j = mcnt; j > 1; j--) {
+            if (mp[j].first == 0) continue;
+            if (mp[j].second != 0)
+                upd(1, n, mp[j].second - mp[j].first + 1, mp[j].second - pre,
+                    -1);
+            pre = mp[j].first;
+        }
+        while (p <= q && ask[p].r == i) {
+            ans[ask[p].id] = qry(1, n, ask[p].l, ask[p].r);
+            p++;
+        }
+    }
+    for (int i = 1; i <= q; i++) printf("%lld\n", ans[i]);
     return 0;
 }
